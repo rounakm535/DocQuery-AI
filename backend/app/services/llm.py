@@ -38,7 +38,7 @@ class LLMService:
             # Note: We're using the sync client here in an async wrapper, but for small payloads this is generally fine.
             # Grok supports standard chat completions format.
             response = client.chat.completions.create(
-                model="grok-beta",
+                model="grok-2-latest",
                 messages=[
                     {"role": "system", "content": system_instruction},
                     {"role": "user", "content": user_prompt}
