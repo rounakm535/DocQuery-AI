@@ -4,20 +4,12 @@ import { Send, FileText, ChevronDown, ChevronUp, Bot } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 
 export default function ChatInterface() {
-  const [messages, setMessages] = useState(() => {
-    const saved = sessionStorage.getItem('chatHistory');
-    if (saved) {
-      return JSON.parse(saved);
-    }
-    return [];
-  });
+  const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  useEffect(() => {
-    sessionStorage.setItem('chatHistory', JSON.stringify(messages));
-  }, [messages]);
+
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
