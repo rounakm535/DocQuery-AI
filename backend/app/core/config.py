@@ -9,6 +9,9 @@ class Settings(BaseSettings):
     # Gemini config
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
     
+    # xAI (Grok) config
+    XAI_API_KEY: str = os.getenv("XAI_API_KEY", "")
+    
     # CORS
     CORS_ORIGINS: List[str] = [
         "http://localhost:5173", # Vite default
