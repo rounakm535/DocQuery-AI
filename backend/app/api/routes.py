@@ -20,6 +20,9 @@ class QueryResponse(BaseModel):
 async def upload_document(file: UploadFile = File(...)):
     """Upload a document, extract text, embed, and store in FAISS."""
     try:
+        # Clear existing knowledge base before adding new document to ensure a fresh session
+        vector_store.clear()
+        
         # Extract text based on file type
         text = await DocumentProcessor.extract_text(file)
         
