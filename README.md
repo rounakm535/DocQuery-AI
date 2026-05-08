@@ -93,5 +93,5 @@ Navigate to `http://localhost:5173` in your browser and enjoy!
 
 ---
 <div align="center">
-  <i>Built with ❤️ for modern AI development.</i>
+ 
 </div>
