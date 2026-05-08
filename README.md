@@ -25,31 +25,6 @@ DocQuery AI allows you to upload any document (PDF, DOCX, TXT) and instantly sta
 
 ---
 
-## ☁️ Deployment Guide (100% Free)
-
-This project is pre-configured to be deployed for zero cost. 
-
-### 1. The Backend (Render)
-Render provides an excellent free tier for Dockerized Python apps.
-1. Push this repository to GitHub.
-2. Go to [Render.com](https://render.com/) and create a **New Web Service**.
-3. Connect this repository.
-4. **Root Directory:** Set this to `backend`
-5. **Environment Variables:** 
-   - `GEMINI_API_KEY`: Generate this for free at [Google AI Studio](https://aistudio.google.com/).
-6. Click Deploy! 
-
-### 2. The Frontend (Vercel)
-Vercel is the gold standard for hosting Vite/React applications.
-1. Go to [Vercel.com](https://vercel.com/) and create a **New Project**.
-2. Connect this repository.
-3. **Framework Preset:** Vite
-4. **Root Directory:** Set this to `frontend`
-5. **Environment Variables:**
-   - `VITE_API_URL`: Set this to your deployed Render URL (e.g., `https://docquery-backend.onrender.com`).
-6. Click Deploy!
-
----
 
 ## 💻 Local Development Setup
 
